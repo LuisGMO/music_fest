@@ -1,0 +1,60 @@
+#header {
+	background: #073C41 !important;
+}
+
+#header img {
+	width: 90px;
+	height: 53pxS;
+}
+
+#main .carousel-inner img {
+	max-height: 70vh;
+	object-fit: cover;
+	opacity: 0.7;
+	/*filter: grayscale(70)*/
+}
+
+#carrusel .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.overlay a {
+	color: white;
+}
+
+#carrusel .overlay .container,
+#carrusel .overlay .row {
+	height: 100%;
+}
+
+#bandas p {
+	color: black;
+}
+
+#place-time img {
+	max-width: 100%;
+}
+
+#place-time {
+	background-color: #83ABAF;
+	color: darkslategray;
+}
+
+#place-time p{
+	color: darkslategray;
+}
+
+#footer {
+	background: #1A565C;
+}
+
+#footer a,
+p {
+	color: white;
+}
