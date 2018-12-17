@@ -1,5 +1,6 @@
+<!-- Luis Guillermo Perez Fernandez-->
 <!doctype html>
-<html lang="es-mx">
+<html lang="es-Mx">
 
 <!-- Inicio de Head -->
 
@@ -8,31 +9,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Links -->
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- Icono Cabecera -->
-	<link rel="shortcut icon" type="image/x-icon" href="assets/img/corona.ico">
 
-	<!-- Estilos -->
-	<link rel="stylesheet" href="index.css">
-
-	<!-- Fontawesom Icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
-	<title>Corona Music Fest Cáncun 2019</title>
+	<link rel="shorcut icon" type="image/x-icon" href="assets/img/corona.ico">
+	<link rel="stylesheet" href="index.css">
+
+	<title>Corona Music Fest Cancún 2019</title>
 </head>
 <!-- Fin de Head -->
 
 <!-- Inicio de Body -->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="79">
-	<!-- Header -->
-	<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark stiky-top">
+
+	<!-- Header:-->
+
+
+	<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
 				<img src="assets/img/LogoCorona.jpg" alt="Corona" class="rounded">
@@ -55,7 +55,7 @@
 						<a class="nav-link" href="#inscribe">Inscribe tu banda</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-success" href="#"><strong>Comprar Entradas</strong></a>
+						<a class="nav-link text-success" href="#compras" data-toggle="modal"><strong>Comprar Entradas</strong></a>
 					</li>
 				</ul>
 			</div>
@@ -83,8 +83,8 @@
 								<p class="d-none d-md-block">
 									Este 2019, Cancún será sede del evento musical más importante de México. grupo Modelo a través de corona tiene el honor de invitar a todos los aficionados a la buena música, a este evento de clase mundial. el cupo es limitado, así que no te quedes fuera y compra tus entradas.
 								</p>
-								<a href="#" class="btn btn-outline-dark mb-2 mt-2" role="button">Quiero tocar en el evento</a>
-								<a href="#" type="button" class="btn btn-success mb-2 mt-2">Comprar entradas</a>
+								<a href="#inscribe" class="btn btn-outline-dark mb-2 mt-2" role="button">Quiero tocar en el evento</a>
+								<a href="#compras" type="button" class="btn btn-success mb-2 mt-2" data-toggle="modal">Comprar entradas </a>
 							</div>
 						</div>
 					</div>
@@ -247,6 +247,7 @@
 							</button>
 						</div>
 					</div>
+
 				</form>
 			</div>
 		</div>
@@ -289,6 +290,27 @@
 		</div>
 	</footer>
 	<!-- fin del footer-->
+
+	<!-- Modal -->
+	<div class="modal fade" id="compras" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Comprar Entradas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Aquí se pondrá el formulario
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-success">Solicitar compra</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <!-- Fin de Body -->
 
@@ -297,7 +319,6 @@
 	$(function() {
 		$('[data-toggle="tooltip"]').tooltip()
 	})
-
 </script>
 
 
